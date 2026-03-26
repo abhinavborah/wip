@@ -1,5 +1,5 @@
 ---
-title: Cool websites I found
+title: cool websites I found
 date: 2026-03-24
 draft: false
 comments: false
