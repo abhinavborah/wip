@@ -7,7 +7,7 @@ tags: [meta]
 
 ## _My interests, qualifications and everything in between._
 
-I am doing my masters from IIIT Hyderabad. I'll be often [nerdsniped](https://xkcd.com/356/) by different fields of interest and would end up spending a copious amount of time on them. I play the [piano](https://www.youtube.com/watch?v=NKn39Cnd3nU) and produce music whenever time permits. I will occasionally [distrohop](https://en.wiktionary.org/wiki/distro-hopping) on an old thinkpad (SL400) and build stuff. Some of my other interests include cinema, philosophy, and mechanical keyboards.
+As of writing this post, I am doing my masters from IIIT Hyderabad. I'll be often [nerdsniped](https://xkcd.com/356/) by different fields of interest and would end up spending a copious amount of time on them. I play the [piano](https://www.youtube.com/watch?v=NKn39Cnd3nU) and produce music whenever time permits. I will occasionally [distrohop](https://en.wiktionary.org/wiki/distro-hopping) on an old thinkpad (SL400) and build stuff. Some of my other interests include cinema, philosophy, and mechanical keyboards.
 
 If you're willing to get in touch with me for work or something I can help with, I'd love to hear from you.
 
@@ -26,7 +26,7 @@ Well, to err is human. To err is also to learn. To learn is to live. Feed your c
 - ==machine==: 2024 MBP M4 Pro 24gigs.
 - ==keebs==: I use an RK84 with gateron browns for typing.
 - ==mouse==: Razer DeathAdder V2 if I have to do graphic work or for gaming (vim motions suffice otherwise).
-- ==phone #1==: iPhone 12 (been half a decade)
+- ==phone #1==: iPhone 12 (been like almost half a decade)
 - ==phone #2==: iPhone SE 2 which I jailbroke on [Dopamine](https://github.com/opa334/Dopamine) running the [KFD exploit](https://github.com/felix-pb/kfd).
 - ==media-consumption==: iPad Air (4th gen) as my secondary monitor and a writing device for all my note-taking needs.
 - _==(archive)==: an early 2000s Lenovo Thinkpad SL400 running arch btw._
