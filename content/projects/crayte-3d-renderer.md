@@ -2,11 +2,8 @@
 title: crayte - a 3d renderer in C
 date: 2024-05-18
 draft: false
-comments: false
 images: [hello-there.jpg]
-toc: false
-tags:
-  - tech
+tags: [tech]
 ---
 
 Crayte (pronounced "create") (see how funny I am) is a real-time 3D renderer written in C. It uses SDL2 for windowing and input handling, with no other dependencies.

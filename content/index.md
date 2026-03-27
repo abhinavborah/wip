@@ -3,11 +3,8 @@ title: hi im abhinav :)
 date: 2024-05-20T17:55:59+05:30
 modified: 2026-03-24
 draft: false
-comments: false
 images: [hello-there.jpg]
-toc: false
-tags:
-  - meta
+tags: [meta]
 ---
 
 Hey, thank you for taking the time to visit my site. This site aims at being a brain dump for my thoughts, discoveries, and implementations.

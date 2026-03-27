@@ -1,9 +1,8 @@
 ---
 title: about me
 date: 2026-03-25
-toc: false
-tags:
-  - meta
+draft: false
+tags: [meta]
 ---
 
 ## _My interests, qualifications and everything in between._

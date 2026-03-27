@@ -2,10 +2,7 @@
 title: on smoking, nihilism and life
 date: 2022-08-22
 draft: false
-comments: false
-toc: false
-tags:
-  - philo
+tags: [philo]
 ---
 
 ## preface

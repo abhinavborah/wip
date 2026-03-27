@@ -2,10 +2,7 @@
 title: cool websites I found
 date: 2026-03-24
 draft: false
-comments: false
-toc: false
-tags:
-  - misc
+tags: [misc]
 ---
 
 I update this section whenever I come across cool, fun, interesting or silly websites I come across. The description for each website is intentionally left incomplete for you to explore the site yourself. Have fun!
