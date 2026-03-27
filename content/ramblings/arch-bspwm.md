@@ -1,5 +1,5 @@
 ---
-title: my bspwm rice
+title: my (legacy) arch btw rice
 date: 2022-06-08
 draft: false
 images: [bspwm-rice.webp]

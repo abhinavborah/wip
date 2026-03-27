@@ -1,5 +1,5 @@
 ---
-title: my neovim setup
+title: my text editor
 date: 2023-12-13
 draft: false
 images: [borah-nvim.webp]

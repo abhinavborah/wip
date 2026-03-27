@@ -1,5 +1,5 @@
 ---
-title: cool websites I found
+title: cool sites
 date: 2026-03-24
 draft: false
 tags: [misc]
