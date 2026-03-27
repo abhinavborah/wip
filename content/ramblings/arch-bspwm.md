@@ -1,7 +1,6 @@
 ---
 title: my bspwm rice
 date: 2022-06-08
-modified: 2026-03-27
 draft: false
 images: [bspwm-rice.webp]
 tags: [meta, tech]
