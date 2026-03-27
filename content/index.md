@@ -17,7 +17,7 @@ Hey, thank you for taking the time to visit my site. This site aims at being a b
 
 ![hi-there](./assets/hi-there.png)
 
-## **_How to Navigate through the site_**
+## **_How to navigate through the site_**
 
 - All the articles are tagged for easy organization, helping you find similar content. Here's what each tag is for:
   - **meta**: where I talk about this site or about myself.
