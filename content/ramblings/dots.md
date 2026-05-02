@@ -5,15 +5,15 @@ draft: false
 tags: [meta, tech]
 ---
 
-been meaning to write this one for a while. every dev eventually builds their own environment, so here's mine.
+i spent an embarrassing amount of time moving pixels around so i wouldn't have to move my hands around. here's what stuck.
 
-## the big picture
+## speed, consistency, and stubbornness
 
-speed, keyboard efficiency, visual consistency. terminal-first on macOS, themed in gruvbox because that's just what I do. **Gruvbox Dark Medium** specifically—easier on the eyes for those late night coding sessions.
+terminal-first on macOS. themed in gruvbox because at some point you just pick a palette and stop thinking about it. **Gruvbox Dark** specifically, easier on the eyes for those late night coding sessions where you realize it's 4am and you were supposed to sleep three hours ago.
 
-## kitty (tty)
+## kitty
 
-switched to [kitty](https://sw.kovidgoyal.net/kitty/) from alacritty. it's written in python and uses OpenGL, which sounds weird but works great. here's what I run with:
+switched to [kitty](https://sw.kovidgoyal.net/kitty/) from alacritty. it's written in python and uses OpenGL, which sounds like someone made a joke but actually works great. here's what i run with:
 
 ```kitty
 font_family      MesloLGS Nerd Font Mono
@@ -23,42 +23,29 @@ cursor_shape_unfocused hollow
 hide_window_decorations yes
 ```
 
-font size 18 because I like being able to read things. block cursor feels right, unfocused windows get the hollow one so you can tell where you are. hide_window_decorations keeps it clean.
+font size 18 because my eyes are bad and i refuse to get glasses. block cursor feels right, unfocused windows get the hollow one so you can tell where you are when you're bouncing between six tmux panes. hide_window_decorations keeps it clean.
 
-## the alacritty backup
+i still keep my alacritty config around. rust-based, gpu-accelerated, genuinely fast. moved to kitty because cross-platform support and the config system doesn't make me want to throw my keeb out the window. old habits die hard.
 
-used alacritty before kitty. rust-based, gpu-accelerated, really fast. moved to kitty because I wanted better cross-platform support and the config system is nicer. still keep my alacritty config around, you know, just in case.
+## tmux
 
-## tmux (tty multiplexer)
+[tmux](https://github.com/tmux/tmux) is the reason i don't lose my mind. prefix remapped to ctrl+a because ctrl+b is a crime against your left hand. vim navigation because leaving home row is for chumps. windows renumber automatically so you don't get gaps and spend twenty minutes trying to remember why there's a hole between 2 and 4.
 
-[tmux](https://github.com/tmux/tmux) is essential for managing sessions, windows, and panes. my setup:
+the plugin situation:
 
-- prefix remapped to ctrl+a (way better than ctrl+b)
-- vim navigation because leaving home row is for chumps
-- windows renumber automatically so you don't get gaps
+- [tpm](https://github.com/tmux-plugins/tpm) because managing plugins by hand is a special kind of pain
+- [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible) for defaults that don't require a phd
+- [tmux-pomodoro-plus](https://github.com/olimorris/tmux-pomodoro-plus) for the timer in the status bar so i can pretend i have discipline
+- [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) for ctrl+hjkl pane switching. seamless.
+- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) and [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) because i crash my machine often enough that manual session recovery is not a viable lifestyle
 
-### plugins
+## karabiner
 
-the good stuff:
-
-| plugin                                                                  | purpose                  |
-| ----------------------------------------------------------------------- | ------------------------ |
-| [tpm](https://github.com/tmux-plugins/tpm)                              | plugin manager           |
-| [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)          | defaults that don't suck |
-| [tmux-pomodoro-plus](https://github.com/olimorris/tmux-pomodoro-plus)   | timer in status bar      |
-| [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) | ctrl+hjkl pane switching |
-| [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)        | save sessions            |
-| [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)        | auto-save every 15 min   |
-
-the pomodoro plugin is useful—shows up right in the status bar so you can see where you are without breaking focus.
-
-## karabiner elements (keybind remapping)
-
-on macOS, [karabiner elements](https://karabiner-elements.pqrs.org/) is the way to go for key remapping.
+on macOS, [karabiner elements](https://karabiner-elements.pqrs.org/) is the only way to make the keyboard feel like it belongs to you instead of apple.
 
 ### the hyper key
 
-caps lock as hyper (shift+cmd+ctrl+option). this is the one modifier combo no app uses, so you get a whole new set of shortcuts without conflicts.
+caps lock as hyper (shift+cmd+ctrl+option). this is the one modifier combo no app uses by default, so you get a whole new set of shortcuts without accidentally closing your browser or something stupid.
 
 ```json
 {
@@ -76,43 +63,28 @@ caps lock as hyper (shift+cmd+ctrl+option). this is the one modifier combo no ap
 }
 ```
 
-tap it once = escape. hold it = hyper. vim-friendly, which is the point.
+tap it once = escape. hold it = hyper. vim-friendly, which is the whole point.
 
-### vim arrows
+### vim arrows and the launcher
 
 hyper + h/j/k/l = arrow keys. keeps hands on home row, less strain, stays in flow state.
 
-### the "o" launcher
+my favorite trick is hyper + o then another key for apps: d for discord, f for firefox, e for finder, m for music, a for arc, w for whatsapp. no mouse, no alfred, no spotlight. just type and it opens. karabiner's simultaneous key detection is clean enough that it feels like magic even though it's just a json file.
 
-my favorite. hyper + o then another key launches apps:
+## fastfetch
 
-- hyper + o + d = discord
-- hyper + o + f = firefox
-- hyper + o + e = finder
-- hyper + o + m = music
-- hyper + o + a = arc
-- hyper + o + w = whatsapp
+[fastfetch](https://github.com/fastfetch-cli/fastfetch) because neofetch stopped getting updates and i'm too emotionally attached to the ritual of seeing a custom ascii penguin every time i open a terminal. ascii is stored separately so it's easy to swap out when i get bored.
 
-karabiner's simultaneous key detection is clean. no mouse, no alfred, just type.
+## the gruvbox thing
 
-## fastfetch (sys info)
+tmux, kitty, alacritty, all gruvbox. warm, earthy, retro but readable. **Gruvbox Material Dark Medium** specifically. original gruvbox is a bit harsh, this one is softer. i've tried other themes. i always come back. there's probably a lesson there about attachment to familiar things but let's not get philosophical about a color scheme.
 
-[fastfetch](https://github.com/fastfetch-cli/fastfetch) as neofetch isnt maintained anymore. custom ascii art + organized modules. ascii is stored separately so it's easy to swap out.
+## compromises
 
-## the theme: gruvbox
-
-tmux, kitty, alacritty—all gruvbox. warm, earthy, retro but readable. **Gruvbox Material Dark Medium** specifically—original gruvbox is a bit harsh, this one is softer on the eyes.
-
-## trade-offs
-
-everyone's setup has compromises. here are mine:
-
-1. no iterm2—kitty does everything I need
-2. no fuzzy finder in terminal—launcher mode covers it
-3. very keyboard-heavy—if you like the mouse, this won't work for you
+this setup has sharp edges. no iterm2 because kitty does everything i need and i don't want to learn another app's quirks. no fuzzy finder in terminal because launcher mode covers it and adding more tools feels like clutter. very keyboard-heavy. if you like the mouse, this setup will feel hostile. it kind of is.
 
 ## closing
 
-your dotfiles should feel like home. don't just copy someone else—take what works, make it yours.
+your dotfiles should feel like home. don't just clone someone else's repo and call it a day. steal what works, break what doesn't, make it yours. that's the whole point.
 
-repo's linked if you want to poke around. happy hacking!
+repo's linked if you want to steal anything. thanks for reading.
